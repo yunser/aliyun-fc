@@ -1,5 +1,5 @@
 var getRawBody = require('raw-body');
-// var getFormBody = require('body/form');
+var getFormBody = require('body/form');
 var body = require('body');
 
 
@@ -13,7 +13,7 @@ exports.initializer = (context, callback) => {
 */
 
 exports.handler = (req, resp, context) => {
-    console.log('hello world');
+    // console.log('hello world');
 
     var params = {
         // path: req.path,
@@ -21,8 +21,8 @@ exports.handler = (req, resp, context) => {
         // headers: req.headers,
         // method : req.method,
         // requestURI : req.url,
-        // ip: req.clientIP,
-        data: 'hello',
+        ip: req.clientIP,
+        // data: 'hello',
     }
 
     getRawBody(req, function (err, body) {
