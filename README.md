@@ -16,6 +16,8 @@
 
 ## 腾讯云函数计算
 
+补充：腾讯云函数计算后来开始收基础服务费，故关闭了服务。
+
 * 函数计算接口
     * https://service-0k7q57wq-1252184752.gz.apigw.tencentcs.com/release/
 * API 网关接口
